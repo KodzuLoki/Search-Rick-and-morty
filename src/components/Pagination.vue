@@ -1,9 +1,12 @@
 <template>
+  <!-- botones para cambio de pagina -->
   <div class="buttons">
     <button class="btn" @click="prevPage(pagePrev)">⬅ Atras</button>
     <button class="btn" @click="nextPage(pageNext)">Siguiente ➡</button>
   </div>
+  <!-- Fin botones para cambio de pagina -->
 </template>
+
 <script>
 import { computed } from "vue";
 import { useStore } from "vuex";
@@ -38,6 +41,7 @@ export default {
   },
 };
 </script>
+
 <style lang="scss">
 .buttons {
   width: 330px;
