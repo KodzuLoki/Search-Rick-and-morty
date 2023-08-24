@@ -1,5 +1,6 @@
 # prueba rick and morty informacion
 
+Proyecto realizado con vue y realizado cada componente por separado para mejor visualizacion
 
 ## Instalar dependencias
 ```
