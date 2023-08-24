@@ -6,6 +6,7 @@
     @click.self="closeModal"
     v-if="modal"
   >
+    <!-- Modal de datos -->
     <section class="modal" v-if="Object.keys(person).length > 0">
       <figure>
         <img :src="person.image" :alt="person.name" />
@@ -29,12 +30,16 @@
         <div>Sexo: {{ person.gender }}</div>
       </header>
     </section>
+     <!-- Fin Modal de datos -->
+    
     <!-- ventana al cargar los datos -->
     <section v-else>
       <h3>Loading . . .</h3>
     </section>
+    <!-- Fin ventana al cargar los datos -->
   </article>
 </template>
+
 <script>
 'use strict';
 import { computed } from 'vue'
@@ -56,6 +61,7 @@ export default {
   },
 }
 </script>
+
 <style scoped lang="scss">
 .modal-container {
   position: fixed;
