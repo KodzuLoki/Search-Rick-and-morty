@@ -1,11 +1,14 @@
 <template>
+  <!-- Barra de filtros -->
   <div class="filter">
     <div class="item" @click="filter('')">Todos</div>
     <div class="item" @click="filter('Alive')">Vivo</div>
     <div class="item" @click="filter('Dead')">Muerto</div>
     <div class="item" @click="filter('unknown')">Desconocido</div>
   </div>
+  <!-- Fin barra de filtros -->
 </template>
+
 <script>
 import { useStore } from "vuex";
 export default {
@@ -20,6 +23,7 @@ export default {
   },
 };
 </script>
+
 <style lang="scss">
 .filter {
   width: 400px;
