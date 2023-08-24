@@ -1,10 +1,13 @@
 <template>
   <div class="container">
+    <!-- Img como titulo -->
     <img v-bind:src="require('./assets/logo-rick-and-morty.png')" alt="">
+    <!-- LLamada de componentes -->
     <FilterByStatus />
     <FilterByName />
     <ListCharacters />
     <Pagination />
+    <!-- Fin llamada de componentes -->
   </div>
 </template>
 
