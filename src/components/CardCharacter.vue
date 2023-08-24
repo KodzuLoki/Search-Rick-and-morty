@@ -1,4 +1,5 @@
 <template>
+  <!-- Datos por personaje -->
   <div class="character" @click="open(true)">
     <img width="100%" loading="auto" :src="character.image" :alt="character.name" />
     <div class="character__info">
@@ -21,8 +22,10 @@
       <div class="location">Localización: {{ character.location.name }}</div>
     </div>
   </div>
+  <!-- Fin datos por personaje -->
   <ModalCharacter :modal="modal" @closeM="closeM" />
 </template>
+
 <script>
 import ModalCharacter from "@/components/ModalCharacter";
 import { ref } from 'vue'
