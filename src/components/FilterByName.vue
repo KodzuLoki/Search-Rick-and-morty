@@ -1,4 +1,5 @@
 <template>
+  <!-- Barra de busqueda por nombre -->
   <div class="search">
     <input
       type="text"
@@ -7,7 +8,9 @@
       @keyup="filter()"
     />
   </div>
+  <!-- Fin barra de busqueda por nombre -->
 </template>
+
 <script>
 import { useStore } from "vuex";
 import { ref } from "vue";
@@ -26,6 +29,7 @@ export default {
   },
 };
 </script>
+
 <style lang="scss">
 .search {
   width: 400px;
