@@ -1,5 +1,5 @@
 <template>
-
+  <!-- Listar personajes -->
   <section>
     <div class="characters">
       <div class="characters__item" v-for="character in characters" :key="character.id">
@@ -7,8 +7,10 @@
       </div>
     </div>
   </section>
+  <!-- Fin listar personajes -->
   <ModalCharacter />
 </template>
+
 <script>
 import CardCharacter from "@/components/CardCharacter";
 import ModalCharacter from "@/components/ModalCharacter";
@@ -33,6 +35,7 @@ export default {
   },
 };
 </script>
+
 <style>
 .characters {
   display: grid;
